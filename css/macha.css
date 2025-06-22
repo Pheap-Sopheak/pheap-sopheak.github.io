@@ -86,7 +86,7 @@
   height: auto;
   object-fit: contain;
   float: left;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   margin-top: 10px;
 }
 .cp:first-child{
