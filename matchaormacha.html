@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha or Macha | which one is correct?</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .nav {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav .logo li {
+            list-style-type: none;
+        }
+
+        .logo img {
+            width: auto;
+            height: 60px;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: rgb(85, 153, 83);
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav ul li {
+            margin: 0 15px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .nav ul li a:hover {
+            color: rgb(85, 153, 83);
+            border-bottom: 2px solid #00aa88;
+        }
+
+        .nav ul li a.active {
+            color: rgb(85, 153, 83);
+        }
+        .nav .logo li{
+            list-style-type: none;
+        }
+
+        .paragraph {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 20px;
+        } 
+        footer{
+            width: 100%;
+            height: 200px;
+            background-color: rgb(85, 153, 83);
+            color: rgb(53, 14, 14);
+            text-align: center;
+            padding-top: 80px;
+            position: relative;
+            top: 100px;
+        }
+        li{
+            font-size: 20px;;
+        }
+        h1{
+            font-size: 2.5rem;
+            color: #333;
+            margin-left: 0px;
+            font-size: 70px;
+        }
+        .slideshow-container {
+            max-width: 600px;
+            position: relative;
+            margin: auto;
+            margin-top: 40px;
+        }
+        .slide {
+            display: none;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        /* Optional: Fade effect */
+        .fade {
+            animation: fade 1s;
+        }
+
+        /* Mobile styles */
+        @media screen and (max-width: 768px) {
+        .menu-toggle {
+                display: block;
+            }
+            .nav {
+                height: auto;
+                flex-wrap: wrap;
+            }
+            #nav-links {
+                overflow: hidden;
+                max-height: 0;
+                flex-direction: column;
+                width: 100%;
+                background: white;
+                transition: max-height 0.3s ease;
+            }
+            #nav-links li {
+                text-align: center;
+                padding: 10px 0;
+            }
+            #nav-links.active {
+                max-height: 500px;
+            }
+            h1 {
+                font-size: 1.8rem;
+                /* margin: 15px; */
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .logo img {
+                height: 50px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+        }
+
+
+        @keyframes fade {
+            from {opacity: 0.4;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+   <div class="nav">
+        <div class="logo"> 
+            <a href="index.html"><img src="./img/matcha logo.png" alt="matcha logo"></a>
+        </div>
+
+        <!-- Hamburger icon -->
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776;
+        </div>
+
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="matchaormacha.html" class="active">Matcha or macha?</a></li>
+            <li><a href="what-is-matcha.html">What's Matcha?</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <br><br><br><br>
+
+    <div class="paragraph">
+
+        <h1>Matcha or Macha?</h1><br>
+        <p>
+            The matcha (often misspelled as macha) is green tea leaves, specifically from the Camellia sinensis plant. Matcha is a finely ground powder made from specially grown and processed shade-grown green tea leaves. </p>
+        <br>
+        <p>Matcha is rich in caffeine and amino acids. Like green tea, matcha is high in antioxidants, including catechins, which may help prevent cell damage and lower your risk of certain diseases. Some studies also suggest that the catechins and caffeine found in matcha may have a mild benefit in weight loss and management.</p>
+        <br>
+        <p>Matcha is a finely ground powder made from specially grown and processed green tea leaves, derived from the Camellia sinensis plant—the same plant used to make other types of tea such as black, oolong, and regular green tea. </p>
+        <br>
+        <p>What sets matcha apart is the unique way the tea plants are cultivated and processed. Primarily grown in Japan—particularly in regions like Uji, Nishio, and Shizuoka—matcha has its historical roots in China during the Tang Dynasty, but it was in Japan that the practice of grinding tea leaves into powder and consuming them in traditional ceremonies was refined and elevated into an art form. About three to four weeks before harvest, the tea plants are shaded from direct sunlight. This shading process boosts chlorophyll production, enhances the vibrant green color of the leaves, and increases the levels of L-theanine, an amino acid known for promoting calmness and focus. Once harvested, the leaves are steamed to stop oxidation, then dried and stripped of stems and veins to produce what is called tencha. This tencha is then stone-ground into the fine powder known as matcha. Because the entire leaf is consumed when drinking matcha, it provides more concentrated nutrients than regular green tea, including antioxidants, vitamins, and a moderate amount of caffeine.</p>
+        <br>
+        <p> Matcha is prized not only for its smooth, umami-rich flavor but also for its health benefits, which may include improved concentration, boosted metabolism, and support for heart health.</p>
+        <br>
+
+    </div>
+
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <!-- <a onclick="plusSlides(-1)">&#10094; </a> -->
+            <img src="/img/Matcha-powder-chasen.jpg" alt="Image 1">
+        </div>
+
+        <div class="slide fade">
+            <img src="/img/mix.jpg" alt="Image 2">
+        </div>
+
+        <div class="slide fade">
+            <img src="/img/matcha-hot.jpg" alt="Image 3">
+            <!-- <a onclick="plusSlides(1)"> &#10095;</a> -->
+        </div>
+        
+        
+
+    </div>
+     <footer>
+        <p>&copy; 2025 Macha Website. All rights reserved.</p>
+        <p>Follow me on <a href="https://www.instagram.com" target="_blank">Instagram</a> and <a href="https://www.facebook.com" target="_blank">Facebook</a>.</p>
+        <p>Created by <b>Pheap Sopheak</b>. </p>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+
+        // Show the current slide
+        slides[slideIndex - 1].style.display = "block";
+
+        // Change image every 5 seconds
+        setTimeout(showSlides, 5000);
+        }
+        function plusSlides(n) {
+            slideIndex += n - 1; // adjust index
+            showSlides();
+        }
+
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+
+
+    </script>
+</body>
+
+</html>

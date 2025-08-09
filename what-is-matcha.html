@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What is Matcha?</title>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    /* NAVBAR */
+
+    .nav {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav .logo li {
+            list-style-type: none;
+        }
+
+        .logo img {
+            width: auto;
+            height: 60px;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+        cursor: pointer;
+        color: rgb(85, 153, 83);
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav ul li {
+            margin: 0 15px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .nav ul li a:hover {
+            color: rgb(85, 153, 83);
+            border-bottom: 2px solid #00aa88;
+        }
+
+        .nav ul li a.active {
+            color: rgb(85, 153, 83);
+        }
+
+
+        /* CONTENT */
+        h1{
+            font-size: 2.5rem;
+            color: #333;
+            margin: 50px 120px;
+            font-size: 70px;
+        }
+
+    .paragraph {
+        width: 80%;
+        /* height: 200px; */
+        margin: auto;
+        font-size: 18px;
+        /* line-height: 1.6; */
+    }
+    .pic{
+        width: 80%;
+        height: 400px;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+    }
+    /* FOOTER */
+    footer{
+        width: 100%;
+        height: 200px;
+        background-color: rgb(85, 153, 83);
+        color: rgb(53, 14, 14);
+        text-align: center;
+        padding-top: 80px;
+        position: relative;
+        top: 100px;
+    }
+    li{
+        font-size: 20px;
+    }
+    /* MOBILE STYLES */
+    @media screen and (max-width: 768px) {
+        .menu-toggle {
+            display: block;
+        }
+        .nav {
+            height: auto;
+            flex-wrap: wrap;
+        }
+        #nav-links {
+            overflow: hidden;
+            max-height: 0;
+            flex-direction: column;
+            width: 100%;
+            background: white;
+            transition: max-height 0.3s ease;
+        }
+        #nav-links li {
+            text-align: center;
+            padding: 10px 0;
+        }
+        #nav-links.active {
+            max-height: 500px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            /* margin: 15px; */
+            margin-left: 50px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .logo img {
+            height: 50px;
+        }
+        h1 {
+            font-size: 1.5rem;
+            
+        }
+        
+        .paragraph {
+            width: 90%;
+            font-size: 16px;
+            
+        }
+    }
+
+    
+</style>
+</head>
+<body>
+
+<div class="nav">
+    <div class="logo"> 
+        <li><a href="index.html"><img src="./img/matcha logo.png" alt="matcha logo"></a></li>
+    </div>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+    <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="matchaormacha.html">Matcha or macha?</a></li>
+        <li><a href="what-is-matcha.html" class="active">What's Matcha?</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
+<h1>What is Matcha?</h1>
+<div class="paragraph">
+    <p>Matcha is a finely ground, vibrant green powder made from specially grown and processed green tea leaves. It is a traditional Japanese tea that has gained widespread popularity around the world for its unique flavour, health benefits, and versatility in culinary applications.</p><br>
+        <p>The process of making matcha involves shading the tea plants from direct sunlight for several weeks before harvest. This increases the chlorophyll content in the leaves, giving them their deep green colour. After harvesting, the leaves are steamed to prevent oxidation and preserve their colour and nutrients. The stems and veins are then removed, and the leaves are stone-ground into a fine powder.</p><br>
+        <p>When preparing matcha, the powder is whisked into hot water using a bamboo whisk to create a frothy, smooth, and slightly thick tea. The preparation process is an integral part of the traditional Japanese tea ceremony, known as "chanoyu" or "sado," where the focus is on mindfulness and appreciation of the tea's unique taste and aroma.</p><br>
+        <p>Matcha is cherished not only for its delightful taste, which can be described as vegetal, slightly sweet, and umami-rich, but also for its health benefits. Since the entire tea leaf is consumed when drinking matcha, it provides higher levels of antioxidants, vitamins, and minerals compared to steeped green tea. It contains the amino acid L-theanine, which is known for its relaxing and focusing properties, making matcha a popular choice for promoting a sense of calm alertness.</p><br>
+        <p>In addition to being consumed as a traditional tea, matcha has found its way into various culinary creations, including desserts, beverages, smoothies, and even savory dishes. Its unique flavor and vibrant green color add a delightful twist to a wide array of recipes.</p><br>
+        <p>Overall, matcha has earned a reputation as a beloved beverage and culinary ingredient, appreciated for its rich cultural history, health benefits, and versatility in the kitchen.</p><br><br><br>
+        
+</div>
+<div class="pic">
+    <img src="./img/Kyoto_Matcha_Green_Tea_Farm.jpg" alt="Matcha Farm">
+</div>
+
+<footer>
+    <p>&copy; 2025 Macha Website. All rights reserved.</p>
+    <p>Follow me on <a href="https://www.instagram.com" target="_blank">Instagram</a> and <a href="https://www.facebook.com" target="_blank">Facebook</a>.</p>
+    <p>Created by <b>Pheap Sopheak</b>.</p>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>
