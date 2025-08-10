@@ -86,7 +86,7 @@
         font-size: 18px;
         /* line-height: 1.6; */
     }
-    .pic{
+    /* .pic{
         width: 80%;
         height: 400px;
         margin-top: 0px;
@@ -96,7 +96,20 @@
         justify-content: center;
         align-items: center;
         border-radius: 20px;
-    }
+    } */
+    .slideshow-container {
+            max-width: 600px;
+            position: relative;
+            margin: auto;
+            margin-top: 40px;
+        }
+        .slide {
+            display: none;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
     /* FOOTER */
     footer{
         width: 100%;
@@ -191,9 +204,25 @@
         <p>Overall, matcha has earned a reputation as a beloved beverage and culinary ingredient, appreciated for its rich cultural history, health benefits, and versatility in the kitchen.</p><br><br><br>
         
 </div>
-<div class="pic">
-    <img src="./img/Kyoto_Matcha_Green_Tea_Farm.jpg" alt="Matcha Farm">
-</div>
+
+
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <!-- <a onclick="plusSlides(-1)">&#10094; </a> -->
+            <img src="/img/Matcha-powder-chasen.jpg" alt="Image 1">
+        </div>
+
+        <div class="slide fade">
+            <img src="/img/mix.jpg" alt="Image 2">
+        </div>
+
+        <div class="slide fade">
+            <img src="/img/matcha-hot.jpg" alt="Image 3">
+            <!-- <a onclick="plusSlides(1)"> &#10095;</a> -->
+        </div>
+
+    </div>
+    
 
 <footer>
     <p>&copy; 2025 Macha Website. All rights reserved.</p>
@@ -208,6 +237,30 @@
     menuToggle.addEventListener("click", () => {
         navLinks.classList.toggle("active");
     });
+    let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+
+        // Show the current slide
+        slides[slideIndex - 1].style.display = "block";
+
+        // Change image every 5 seconds
+        setTimeout(showSlides, 5000);
+        }
+        function plusSlides(n) {
+            slideIndex += n - 1; // adjust index
+            showSlides();
+        }
 </script>
 
 </body>
