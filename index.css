@@ -24,15 +24,15 @@
         }
 
         .logo img {
-            width: auto;
-            height: 60px;
+            width: 130px;
+            height: auto;
         }
 
         .menu-toggle {
             display: none;
             font-size: 28px;
-        cursor: pointer;
-        color: rgb(85, 153, 83);
+            cursor: pointer;
+            color: rgb(85, 153, 83);
         }
 
         .nav ul {
@@ -83,6 +83,9 @@
     }
     #nav-links.active {
         max-height: 500px;
+    }
+    .logo img{
+        height: auto;
     }
 
 }
